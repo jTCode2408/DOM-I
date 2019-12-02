@@ -55,6 +55,23 @@ navi.forEach(navi => {
 navi.style.color = "green";
 }) //turn nav links green
 
+const newNav = document.createElement('a');
+newNav.textContent= "Other"
+const parent = document.querySelector('nav');
+parent.append(newNav)
+
+const newNav2 = document.createElement('a');
+newNav2.textContent= "More"
+const parent2 = document.querySelector('nav');
+parent2.prepend(newNav2)//add items to nav
+
+newNav.style.color = "green";
+newNav2.style.color = "green";
+
+
+
+//add items to nav
+
 const title = document.querySelector('h1');
 title.textContent =  siteContent.cta.h1; //add h1 text
 //title.style.alignContent = center;
@@ -111,6 +128,7 @@ const contact = document.querySelector(".contact h4")
 contact.textContent = siteContent["contact"]["contact-h4"];
 
 const contactInfo = document.querySelectorAll(".contact p")
+
 
 contactInfo[0].textContent = siteContent["contact"]["address"];
 
