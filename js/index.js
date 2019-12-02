@@ -130,11 +130,12 @@ contact.textContent = siteContent["contact"]["contact-h4"];
 const contactInfo = document.querySelectorAll(".contact p")
 
 
-contactInfo[0].textContent = siteContent["contact"]["address"];
+contactInfo[0].textContent = "123 Way 456 Street";
+contactInfo[1].textContent = "Somewhere, USA";
+contactInfo[2].textContent = siteContent["contact"]["phone"];
 
-contactInfo[1].textContent = siteContent["contact"]["phone"];
+contactInfo[3].textContent = siteContent["contact"]["email"];
 
-contactInfo[2].textContent = siteContent["contact"]["email"];
 
 
 //add copyright footer "footer"
