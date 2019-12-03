@@ -74,7 +74,11 @@ newNav2.style.color = "green";
 
 const title = document.querySelector('h1');
 title.textContent =  siteContent.cta.h1; //add h1 text
-//title.style.alignContent = center;
+
+const headStyle = document.querySelector('h1');
+headStyle.style.alignContent= "center";
+headStyle.style.width= "40%";
+
 
 const buttonText = document.querySelector('button');
 buttonText.textContent = "Get Started"; //add button text
@@ -130,14 +134,14 @@ contact.textContent = siteContent["contact"]["contact-h4"];
 const contactInfo = document.querySelectorAll(".contact p")
 
 
-contactInfo[0].textContent = "123 Way 456 Street";
-contactInfo[1].textContent = "Somewhere, USA";
-contactInfo[2].textContent = siteContent["contact"]["phone"];
+contactInfo[0].textContent = siteContent["contact"]["address"];
+contactInfo[1].textContent = siteContent["contact"]["phone"];
 
-contactInfo[3].textContent = siteContent["contact"]["email"];
-
+contactInfo[2].textContent = siteContent["contact"]["email"];
 
 
+const address = siteContent["contact"]["address"];
+address.style.color= "red";
 //add copyright footer "footer"
 const foot = document.querySelector('footer')
 foot.textContent = siteContent["footer"]["copyright"];
